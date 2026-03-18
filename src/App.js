@@ -2,8 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-// API URL - uses environment variable or defaults to localhost
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+// API URL - Railway backend (hardcoded for production)
+const API_URL = "https://splendid-growth-production.up.railway.app";
 
 function App() {
   const [url, setUrl] = useState("");
